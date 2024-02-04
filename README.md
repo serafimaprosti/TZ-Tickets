@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS tickets (
    CONSTRAINT FKclh8sgbev455tku5nfid52es9 FOREIGN KEY (patient_id) REFERENCES patients
 );
 ```
-также он есть в файле tz-KTE-Lab/src/main/resources/schema.sql
+также он есть в файле TZ-Tickets/src/main/resources/schema.sql
 
 
 <br><br>
