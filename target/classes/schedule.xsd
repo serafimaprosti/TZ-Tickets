@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://example.com/tz_kte_lab_soap"
+           targetNamespace="http://example.com/tz_kte_lab_soap"
+           elementFormDefault="qualified">
+
+    <xs:element name="getScheduleRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="durationOfMinutes" type="xs:int"/>
+                <xs:element name="startDateTime" type="xs:dateTime"/>
+                <xs:element name="endDateTime" type="xs:dateTime"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getScheduleResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="status" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
